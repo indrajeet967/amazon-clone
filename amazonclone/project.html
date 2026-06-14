@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon.in - Shop Online</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="nav-logo"><h2>amazon<span>.in</span></h2></a>
+        <div class="nav-location"><i class="fa-solid fa-location-dot"></i> Deliver to Moradabad</div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search Amazon.in">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div style="color: white; font-weight: bold; font-size: 14px;">Hello, sign in<br>Account & Lists</div>
+        <a href="#" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+    </header>
+    <div class="sub-nav">
+        <span><i class="fa-solid fa-bars"></i> All</span>
+        <span>Amazon miniTV</span><span>Sell</span><span>Best Sellers</span><span>Mobiles</span><span>Electronics</span><span>Fashion</span>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-slide active-slide">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1600&q=80" alt="Sale 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1555529771-835f59fc5efe?auto=format&fit=crop&w=1600&q=80" alt="Sale 2">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <main class="product-grid grid-overlap">
+        <div class="card">
+            <h3>Premium Smartphones</h3>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=80" alt="Mobiles">
+            <div class="card-price">Starting ₹54,999</div>
+            <a href="#">Explore all models</a>
+        </div>
+
+        <div class="card">
+            <h3>Up to 60% off | Styles for Men</h3>
+            <div class="card-grid-4">
+                <div><img src="https://images.unsplash.com/photo-1617137968427-85924c400a86?w=300&q=80" alt="Shirt"><p>Clothing</p></div>
+                <div><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=300&q=80" alt="Shoes"><p>Footwear</p></div>
+                <div><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&q=80" alt="Watch"><p>Watches</p></div>
+                <div><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&q=80" alt="Bag"><p>Bags</p></div>
+            </div>
+            <a href="#">End of season sale</a>
+        </div>
+
+        <div class="card">
+            <h3>High-Performance Laptops</h3>
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=80" alt="Laptops">
+            <div class="card-price">From ₹45,000 to ₹1,20,000</div>
+            <a href="#">Shop top brands</a>
+        </div>
+
+        <div class="card">
+            <h3>Home Appliances</h3>
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=500&q=80" alt="Kitchen">
+            <div class="card-price">Up to 45% Off</div>
+            <a href="#">Upgrade your home</a>
+        </div>
+    </main>
+
+    <div class="horizontal-section">
+        <h3 style="font-size: 22px; margin-bottom: 10px;">Today's Deals <a href="#" style="font-size: 14px; margin-left: 15px;">See all deals</a></h3>
+        <div class="horizontal-scroll">
+            <div class="scroll-item">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&q=80" alt="Headphones">
+                <span class="badge">Deal of the Day</span>
+                <div class="item-price">₹1,499 <span>₹3,999</span></div>
+                <p style="font-size: 14px;">Sony Wireless Headphones</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&q=80" alt="Watch">
+                <span class="badge">25% off</span>
+                <div class="item-price">₹2,999 <span>₹4,999</span></div>
+                <p style="font-size: 14px;">Noise Smartwatch Pro</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300&q=80" alt="Camera">
+                <span class="badge">Limited Time Deal</span>
+                <div class="item-price">₹45,990 <span>₹55,000</span></div>
+                <p style="font-size: 14px;">Canon EOS DSLR Camera</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://images.unsplash.com/photo-1583394838002-aec08a9db31a?w=300&q=80" alt="Bag">
+                <span class="badge">50% off</span>
+                <div class="item-price">₹899 <span>₹1,799</span></div>
+                <p style="font-size: 14px;">Wildcraft Laptop Backpack</p>
+            </div>
+            <div class="scroll-item">
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=300&q=80" alt="Keyboard">
+                <span class="badge">Deal of the Day</span>
+                <div class="item-price">₹1,250 <span>₹2,500</span></div>
+                <p style="font-size: 14px;">Logitech Mechanical Keyboard</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="product-grid">
+        <div class="card">
+            <h3>Daily Groceries & Essentials</h3>
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80" alt="Groceries">
+            <div class="card-price">Under ₹499 store</div>
+            <a href="#">Shop on Amazon Fresh</a>
+        </div>
+
+        <div class="card">
+            <h3>Fitness & Sports Equipment</h3>
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&q=80" alt="Fitness">
+            <div class="card-price">Dumbbells starting ₹699</div>
+            <a href="#">Explore fitness range</a>
+        </div>
+
+        <div class="card">
+            <h3>Bestselling Books</h3>
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&q=80" alt="Books">
+            <div class="card-price">Starting ₹99</div>
+            <a href="#">Shop top reads</a>
+        </div>
+
+        <div class="card">
+            <h3>Beauty & Personal Care</h3>
+            <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?w=500&q=80" alt="Beauty">
+            <div class="card-price">Up to 30% Off</div>
+            <a href="#">Discover more</a>
+        </div>
+    </main>
+
+    <div class="back-to-top" onclick="window.scrollTo(0,0)">Back to top</div>
+    
+    <footer class="footer-main">
+        <div class="footer-col">
+            <h4>Get to Know Us</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Connect with Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Make Money with Us</h4>
+            <ul>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Protect and Build Your Brand</a></li>
+                <li><a href="#">Amazon Pay on Merchants</a></li>
+                <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Let Us Help You</h4>
+            <ul>
+                <li><a href="#">COVID-19 and Amazon</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Returns Centre</a></li>
+                <li><a href="#">100% Purchase Protection</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>Conditions of Use & Sale &nbsp; | &nbsp; Privacy Notice &nbsp; | &nbsp; Interest-Based Ads</p>
+        <p style="margin-top: 10px;">© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        let slides = document.getElementsByClassName("carousel-slide");
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 4000); 
+        }
+        function changeSlide(n) {
+            slideIndex += n - 1;
+            if(slideIndex < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+            if (slideIndex >= slides.length) {slideIndex = 0}    
+            slides[slideIndex].style.display = "block"; 
+        }
+        showSlides();
+    </script>
+</body>
+</html>
